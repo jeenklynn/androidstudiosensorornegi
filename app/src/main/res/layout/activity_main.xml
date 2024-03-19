@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/accelerometerButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accelerometerValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Accelerometer Value: "
+        app:layout_constraintStart_toEndOf="@+id/accelerometerButton"
+        app:layout_constraintTop_toTopOf="@+id/accelerometerButton" />
+
+    <!-- Gyroscope -->
+    <Button
+        android:id="@+id/gyroscopeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/accelerometerButton" />
+
+    <TextView
+        android:id="@+id/gyroscopeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gyroscope Value: "
+        app:layout_constraintStart_toEndOf="@+id/gyroscopeButton"
+        app:layout_constraintTop_toTopOf="@+id/gyroscopeButton" />
+
+    <!-- Light Sensor -->
+    <Button
+        android:id="@+id/lightSensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Sensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gyroscopeButton" />
+
+    <TextView
+        android:id="@+id/lightSensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Light Sensor Value: "
+        app:layout_constraintStart_toEndOf="@+id/lightSensorButton"
+        app:layout_constraintTop_toTopOf="@+id/lightSensorButton" />
+
+    <!-- Proximity Sensor -->
+    <Button
+        android:id="@+id/proximitySensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity Sensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lightSensorButton" />
+
+    <TextView
+        android:id="@+id/proximitySensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proximity Sensor Value: "
+        app:layout_constraintStart_toEndOf="@+id/proximitySensorButton"
+        app:layout_constraintTop_toTopOf="@+id/proximitySensorButton" />
+
+    <!-- Step Counter -->
+    <Button
+        android:id="@+id/stepCounterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Counter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/proximitySensorButton" />
+
+    <TextView
+        android:id="@+id/stepCounterValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Counter Value: "
+        app:layout_constraintStart_toEndOf="@+id/stepCounterButton"
+        app:layout_constraintTop_toTopOf="@+id/stepCounterButton" />
+
+    <!-- Step Detector -->
+    <Button
+        android:id="@+id/stepDetectorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Detector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepCounterButton" />
+
+    <TextView
+        android:id="@+id/stepDetectorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Step Detector Value: "
+        app:layout_constraintStart_toEndOf="@+id/stepDetectorButton"
+        app:layout_constraintTop_toTopOf="@+id/stepDetectorButton" />
+
+    <!-- Magnetic Field Sensor -->
+    <Button
+        android:id="@+id/magneticFieldButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Magnetic Field Sensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stepDetectorButton" />
+
+    <TextView
+        android:id="@+id/magneticFieldValue"
+        android:layout_width="203dp"
+        android:layout_height="24dp"
+        android:text="Magnetic Field Sensor Value: "
+        app:layout_constraintStart_toEndOf="@+id/magneticFieldButton"
+        app:layout_constraintTop_toTopOf="@+id/magneticFieldButton" />
+
+    <!-- Rotation Vector Sensor -->
+    <Button
+        android:id="@+id/rotationVectorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotation Vector Sensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magneticFieldButton" />
+
+    <TextView
+        android:id="@+id/rotationVectorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotation Vector Sensor Value: "
+        app:layout_constraintStart_toEndOf="@+id/rotationVectorButton"
+        app:layout_constraintTop_toTopOf="@+id/rotationVectorButton" />
+
+    <!-- Pressure Sensor -->
+    <Button
+        android:id="@+id/pressureSensorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure Sensor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rotationVectorButton" />
+
+    <TextView
+        android:id="@+id/pressureSensorValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pressure Sensor Value: "
+        app:layout_constraintStart_toEndOf="@+id/pressureSensorButton"
+        app:layout_constraintTop_toTopOf="@+id/pressureSensorButton" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
